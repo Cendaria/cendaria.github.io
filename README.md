@@ -1,2 +1,0 @@
-# cendaria.github.io
-landing
