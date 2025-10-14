@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cendaria - Forging Careers, Breaking Barriers</title>
+  <meta name="description" content="Empowering women and diversity candidates to overcome systemic barriers and forge authentic career narratives.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            charcoal: '#2d2d2d',
+            slate: '#4a5568',
+            gold: '#d4af37',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #2d2d2d;
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px -3px rgba(212, 175, 55, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center gap-3">
+          <!-- Replaced SVG with original PNG logo -->
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Cendaria_Image_Forge-joWfv9esVJiRyqBiDgVm6wEVh3icp3.png" alt="Cendaria Logo" class="h-10 w-auto">
+          <span class="text-xl font-bold text-charcoal">Cendaria</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#about" class="text-sm font-medium text-slate hover:text-charcoal transition-colors">About</a>
+          <a href="#solutions" class="text-sm font-medium text-slate hover:text-charcoal transition-colors">Solutions</a>
+          <a href="https://github.com/cendaria" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-slate hover:text-charcoal transition-colors">GitHub</a>
+          <a href="#join" class="btn-primary text-white px-4 py-2 rounded-lg text-sm font-semibold">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative py-20 lg:py-32 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-white"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-4xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/10 border border-gold/20 mb-6">
+          <!-- Replaced SVG with original PNG logo -->
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Cendaria_Image_Forge-joWfv9esVJiRyqBiDgVm6wEVh3icp3.png" alt="Cendaria" class="h-5 w-auto">
+          <span class="text-sm font-semibold text-charcoal">Empowering Career Transformation</span>
+        </div>
+        
+        <h1 class="text-5xl lg:text-7xl font-bold text-charcoal mb-6 leading-tight">
+          Forging Careers,<br/>
+          <span class="gradient-text">Breaking Barriers</span>
+        </h1>
+        
+        <p class="text-xl text-slate mb-8 max-w-2xl mx-auto leading-relaxed">
+          Empowering women and diversity candidates to overcome systemic barriers, break into new opportunities, and forge authentic career narratives through strategic tools and community support.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <a href="#solutions" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg">
+            Explore Solutions
+          </a>
+          <a href="https://github.com/cendaria" target="_blank" rel="noopener noreferrer" class="bg-white border-2 border-charcoal text-charcoal px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors">
+            View on GitHub
+          </a>
+        </div>
+        
+        <div class="grid grid-cols-3 gap-8 max-w-2xl mx-auto pt-8 border-t border-gray-200">
+          <div>
+            <div class="text-3xl font-bold text-charcoal mb-1">5,000+</div>
+            <div class="text-sm text-slate">Careers Transformed</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-charcoal mb-1">50+</div>
+            <div class="text-sm text-slate">Tools & Resources</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-charcoal mb-1">100+</div>
+            <div class="text-sm text-slate">Community Contributors</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-charcoal mb-4">About Cendaria</h2>
+        <p class="text-xl text-slate max-w-3xl mx-auto leading-relaxed">
+          We are the foundational forge where careers are transformed. Our mission is to dismantle systemic barriers and empower traditionally underrepresented professionals to break in, move up, and forge their authentic stories.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="card-hover bg-white p-8 rounded-xl border border-gray-200">
+          <div class="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-charcoal mb-3">Breaking Barriers</h3>
+          <p class="text-slate leading-relaxed">
+            Addressing systemic challenges of bias, access, and opportunity that traditionally limit career advancement for women and diversity candidates.
+          </p>
+        </div>
+        
+        <div class="card-hover bg-white p-8 rounded-xl border border-gray-200">
+          <div class="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-charcoal mb-3">Strategic Growth</h3>
+          <p class="text-slate leading-relaxed">
+            Providing intelligent tools and frameworks that help professionals navigate career transitions, skill development, and strategic positioning.
+          </p>
+        </div>
+        
+        <div class="card-hover bg-white p-8 rounded-xl border border-gray-200">
+          <div class="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-charcoal mb-3">Authentic Stories</h3>
+          <p class="text-slate leading-relaxed">
+            Empowering professionals to craft and communicate their unique career narratives with confidence, clarity, and strategic intent.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section id="solutions" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-charcoal mb-4">Our Solutions</h2>
+        <p class="text-xl text-slate max-w-3xl mx-auto leading-relaxed">
+          Discover our suite of tools designed to empower your career journey
+        </p>
+      </div>
+      
+      <div class="grid lg:grid-cols-2 gap-8">
+        <!-- Athena Product Card -->
+        <div class="card-hover bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl border-2 border-gold/20">
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <div class="inline-block px-3 py-1 bg-purple-100 text-purple-700 text-xs font-semibold rounded-full mb-3">
+                FLAGSHIP PRODUCT
+              </div>
+              <h3 class="text-3xl font-bold text-charcoal mb-2">Athena</h3>
+              <p class="text-slate font-medium">Wise. Strategic. Empowering.</p>
+            </div>
+            <svg class="w-12 h-12 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+            </svg>
+          </div>
+          <p class="text-slate mb-6 leading-relaxed">
+            Our flagship AI-powered career intelligence platform that provides strategic guidance, personalized insights, and tools to help you navigate career transitions with wisdom and precision.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full">Career Strategy</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full">AI-Powered</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full">Personalized</span>
+          </div>
+          <a href="https://github.com/cendaria/athena" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-gold font-semibold hover:underline">
+            Learn More
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Additional Tools Card -->
+        <div class="card-hover bg-white p-8 rounded-xl border border-gray-200">
+          <h3 class="text-2xl font-bold text-charcoal mb-4">Career Tools & Resources</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <div>
+                <div class="font-semibold text-charcoal">Resume Builder</div>
+                <div class="text-sm text-slate">Craft compelling resumes that tell your authentic story</div>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <div>
+                <div class="font-semibold text-charcoal">Interview Prep</div>
+                <div class="text-sm text-slate">Practice and refine your interview skills with AI feedback</div>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <div>
+                <div class="font-semibold text-charcoal">Skill Mapping</div>
+                <div class="text-sm text-slate">Identify gaps and create strategic development plans</div>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <div>
+                <div class="font-semibold text-charcoal">Network Builder</div>
+                <div class="text-sm text-slate">Connect with mentors and allies in your field</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="join" class="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-bold text-charcoal mb-6">Join the Movement</h2>
+      <p class="text-xl text-slate mb-8 leading-relaxed">
+        Be part of a community dedicated to breaking barriers and forging new paths in career development. Together, we're creating opportunities for everyone.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://github.com/cendaria" target="_blank" rel="noopener noreferrer" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg">
+          Explore on GitHub
+        </a>
+        <a href="mailto:hello@cendaria.com" class="bg-white border-2 border-charcoal text-charcoal px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex items-center gap-3">
+          <!-- Replaced SVG with original PNG logo -->
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Cendaria_Image_Forge-joWfv9esVJiRyqBiDgVm6wEVh3icp3.png" alt="Cendaria Logo" class="h-8 w-auto">
+          <span class="text-lg font-bold text-charcoal">Cendaria</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="https://github.com/cendaria" target="_blank" rel="noopener noreferrer" class="text-slate hover:text-charcoal transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+          <a href="https://twitter.com/cendaria" target="_blank" rel="noopener noreferrer" class="text-slate hover:text-charcoal transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/company/cendaria" target="_blank" rel="noopener noreferrer" class="text-slate hover:text-charcoal transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+            </svg>
+          </a>
+        </div>
+        <p class="text-sm text-slate">
+          © 2025 Cendaria. Forging careers, breaking barriers.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Smooth Scroll Script -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
