@@ -85,7 +85,7 @@
       </h1>
       
       <p class="text-xl md:text-2xl text-slate max-w-3xl mx-auto mb-12">
-        We **build equitable pathways** for professionals—including women and historically marginalized groups—to achieve unprecedented career trajectory, authentic leadership, and impact.
+        We build equitable pathways for professionals—including women and historically marginalized groups—to achieve unprecedented career trajectory, authentic leadership, and impact.
       </p>
       
       <a href="#solutions" class="inline-block bg-gold hover:bg-opacity-90 text-white text-lg font-bold py-4 px-10 rounded-full transition duration-300 shadow-xl transform hover:scale-105">
@@ -107,7 +107,7 @@
       <div class="max-w-4xl mx-auto text-center">
         <h3 class="text-3xl font-bold mb-4 text-charcoal">Our Mission: Building Equitable Access</h3>
         <p class="text-xl text-slate mb-12">
-          Our mission is to build a foundation of **equitable access**. We actively **dismantle systemic barriers** and **invest in the strategic growth** of all professionals from historically **resilient communities**.
+          Our mission is to build a foundation of equitable access. We actively dismantle systemic barriers and invest in the strategic growth of all professionals from historically resilient communities.
         </p>
       </div>
 
@@ -117,7 +117,7 @@
           <svg class="w-10 h-10 text-gold mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-13.41L10 14.17l-3.59-3.58L5 12l5 5 8-8-1.41-1.41z"/></svg>
           <h4 class="text-xl font-bold mb-2 text-charcoal">Systemic Transformation</h4>
           <p class="text-slate">
-            We address systemic challenges of bias and access by actively **transforming talent systems**, ensuring equitable opportunities and strategic career advancement for all professionals.
+            We address systemic challenges of bias and access by actively transforming talent systems, ensuring equitable opportunities and strategic career advancement for all professionals.
           </p>
         </div>
         
@@ -169,14 +169,13 @@
       <h2 class="text-4xl font-extrabold text-white mb-4">Ready to Build Your Influence?</h2>
       <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-10">
         Take the first step toward a career trajectory defined by your terms. Connect with our strategic advisory team today.
-      </p>
-      
-      <a href="mailto:236452836+cebrioneus@users.noreply.github.com" class="inline-block bg-gold hover:bg-opacity-90 text-charcoal text-lg font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
-        Schedule A Consultation
-      </a>
+      </p>   
+<a href="#" class="cta-signup inline-block bg-gold hover:bg-opacity-90 text-charcoal text-lg font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+  Join Our Influence Network
+</a>
+
     </div>
   </section>
-
   <footer class="bg-white border-t border-gray-200 py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row justify-between items-center">
@@ -199,6 +198,69 @@
       </div>
     </div>
   </footer>
+<!-- ...existing code... -->
+<div id="emailModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-xl p-8 max-w-md w-full shadow-lg text-center" id="emailModalContent">
+    <h3 class="text-2xl font-bold mb-4 text-charcoal">Join Our Influence Network</h3>
+    <p class="mb-6 text-slate">Sign up to receive exclusive insights, resources, and updates from Cendaria.</p>
+    <form id="emailSignupForm" action="https://formspree.io/f/xvgwdgyr" method="POST">
+      <input type="email" name="email" placeholder="Your email address" required class="w-full px-4 py-2 mb-4 border rounded focus:outline-none focus:ring-2 focus:ring-gold">
+      <button type="submit" class="w-full bg-gold text-charcoal font-bold py-2 rounded hover:bg-opacity-90 transition">Sign Up</button>
+    </form>
+    <button onclick="closeEmailModal()" class="mt-6 text-slate hover:text-gold">Close</button>
+  </div>
+</div>
+<script>
+  // Open modal
+  document.querySelector('.cta-signup').onclick = function(e) {
+    e.preventDefault();
+    document.getElementById('emailModal').classList.remove('hidden');
+  };
+  // Close modal
+  function closeEmailModal() {
+    document.getElementById('emailModal').classList.add('hidden');
+    // Optionally reset modal content for next open
+    document.getElementById('emailModalContent').innerHTML = `
+      <h3 class="text-2xl font-bold mb-4 text-charcoal">Join Our Influence Network</h3>
+      <p class="mb-6 text-slate">Sign up to receive exclusive insights, resources, and updates from Cendaria.</p>
+      <form id="emailSignupForm" action="https://formspree.io/f/xvgwdgyr" method="POST">
+        <input type="email" name="email" placeholder="Your email address" required class="w-full px-4 py-2 mb-4 border rounded focus:outline-none focus:ring-2 focus:ring-gold">
+        <button type="submit" class="w-full bg-gold text-charcoal font-bold py-2 rounded hover:bg-opacity-90 transition">Sign Up</button>
+      </form>
+      <button onclick="closeEmailModal()" class="mt-6 text-slate hover:text-gold">Close</button>
+    `;
+    attachFormHandler(); // Re-attach handler after resetting content
+  }
+  // AJAX submit for Formspree
+  function attachFormHandler() {
+    const form = document.getElementById('emailSignupForm');
+    if (form) {
+      form.onsubmit = async function(e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+          document.getElementById('emailModalContent').innerHTML = `
+            <h3 class="text-2xl font-bold mb-4 text-charcoal">Thank You!</h3>
+            <p class="mb-6 text-slate">Success! Welcome! Watch your inbox for exclusive insights and updates from Cendaria.</p>
+            <button onclick="closeEmailModal()" class="mt-6 text-slate hover:text-gold">Close</button>
+          `;
+        } else {
+          document.getElementById('emailModalContent').innerHTML = `
+            <h3 class="text-2xl font-bold mb-4 text-charcoal">Oops!</h3>
+            <p class="mb-6 text-slate">Something went wrong. Please try again later.</p>
+            <button onclick="closeEmailModal()" class="mt-6 text-slate hover:text-gold">Close</button>
+          `;
+        }
+      };
+    }
+  }
+  attachFormHandler();
+</script>
 
 </body>
 </html>
