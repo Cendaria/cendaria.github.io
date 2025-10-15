@@ -37,13 +37,13 @@
       color: #2d2d2d;
     }
     
-    .gradient-text {
-      background: linear-gradient(135deg, #d4af37, #b8860b);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
-    }
+.gradient-text {
+  background: linear-gradient(135deg, #d4af37, #b8860b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Correct for WebKit browsers */
+  background-clip: text;
+  color: transparent; /* Standard property for other browsers */
+}
   </style>
 </head>
 <body>
@@ -171,7 +171,7 @@
         Take the first step toward a career trajectory defined by your terms. Connect with our strategic advisory team today.
       </p>
       
-      <a href="mailto:info@cendaria.com" class="inline-block bg-gold hover:bg-opacity-90 text-charcoal text-lg font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+      <a href="mailto:236452836+cebrioneus@users.noreply.github.com" class="inline-block bg-gold hover:bg-opacity-90 text-charcoal text-lg font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
         Schedule A Consultation
       </a>
     </div>
@@ -185,7 +185,7 @@
         </p>
         
         <div class="flex space-x-6">
-          <a href="https://twitter.com/cendaria" target="_blank" rel="noopener noreferrer" class="text-slate hover:text-charcoal transition-colors">
+          <a href="https://x.com/cendaria_ai" target="_blank" rel="noopener noreferrer" class="text-slate hover:text-charcoal transition-colors">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M8.297 10.435L3 4h4l4.225 5.565L16 4h4l-5.32 7.553L19 20h-4l-4.573-6.474L6 20H2l5.297-9.565zM16.96 18.407l-6.29-8.472L5.27 4H3.457l6.29 8.472L4.04 20h2.417l4.298-5.333L16.96 20h1.776l-4.994-7.042 5.31-7.568h-2.433z"/>
             </svg>
